@@ -39,10 +39,9 @@ const time = (endingTime - startingTime) * 1000;
 */
 
 function closeAllAndShuffle() {
-  const pieces = document.querySelectorAll('.card');
-  for (let i = 0; i <= pieces.length; i++) {
-    let piece = pieces[i];
-    piece.className = 'card';
+  const cards = document.querySelectorAll('.card');
+  for (let i = 0; i < cards.length; i++) {
+    cards[i].className = 'card';
   }
   shuffle(cards);
 }
